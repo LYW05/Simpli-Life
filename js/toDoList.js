@@ -30,12 +30,31 @@ function geoFindMe() {
   }
   document.querySelector('#find-me').addEventListener('click', geoFindMe);
 
-  //clear button
+//Define Elements
+const clear = document.querySelector(".clear");
+const dateElement = document.getElementById("date");
+const timeElement = document.getElementById("time");
+const list = document.getElementById("list");
+const input = document.getElementById("input");
 
-  //date element
+//Classes assocuated with icons from font awesome 
+const CHECK = "fa-check-circle";
+const UNCHECK = "fa-circle-thin";
+const LINE_THROUGH = "lineThrough"
 
-  //list element
+//Show todays date
+const options = {weekday:"long", month:"short", day:"numeric"};
+const today = new Date();
+dateElement.innerHTML = today
 
-  //input element
+//Show current time
+const today = new Date();
+const time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
 
-  //insertAdjacentHTML()-add new item to list and also keep old items
+//Add to List
+function addToDo(toDo) {
+  const item = '
+               ';
+  const postion = "beforehand";
+  list.insertAdjacentHTML(position, item);
+}
