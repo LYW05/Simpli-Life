@@ -1,13 +1,22 @@
-body{
-    padding: 0;
-    margin: 0;
-    height: 95vh;
-    width: 95vw;
-    display: flex;
-    background-color: rgba(0,0,0,0.1);
-    font-family: 'Roboto', sans-serif;
-    background-color: lightslategray;
-}
+/*-----light mode/dark mode-----*/
+
+/* Light mode CSS */
+:root {
+    --text: #202020;
+    --background: #fafafa;
+  }
+  
+  /* Dark mode CSS */
+  body.dark {
+    --text: #fafafa;
+    --background: #202020;
+    
+  }
+  
+  body {
+    color: var(--text);
+    background: var(--background);
+  }
 
 /* ------------ container ------------ */
 .container{
@@ -30,48 +39,47 @@ img{
     width: 380px;
 }
 #refresh {
-    margin-left: 350px;
-    margin-top: 0px;
-    background: lightskyblue;
     font-size: 25px;
     outline: none;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 #header-title {
     text-align: center;
     padding: 0;
-    color: white;
     font-size: 15px;
     position: relative;
-}
-
-#date, 
-#time{
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: #FFF;
-    font-size: 25px;
-    font-family: 'Titillium Web', sans-serif;
 }
 
 /* iframe */
 iframe {
     margin: 0 auto;
     margin-bottom: 1rem;
-    display: flex;
+    display: block;
     border-style: none;
-    
 }
-
 
 /* ------------ content ------------ */
 
-#content {
-    width: 370px;
-    height: 50vh;
-    background: white;
-
-}
+/*-----Clock-----*/
+body {
+    font-family: 'liquid_crystalregular', sans-serif;
+    user-select: none;
+  }
+  
+  .clock {
+    height: 100px;
+    width: 380px;
+    line-height: 100px;  
+    margin: 150px auto 0;
+    padding: 0 50px;
+    position: relative;
+    left: -520px;
+    background: #222;
+    color: #eee;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 7px #222;
+    text-shadow: 0 0 3px #fff;
+  }

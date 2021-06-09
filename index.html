@@ -2,36 +2,35 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--GOOGLE FONTS-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
         <!--Font Awesome Icons-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="style.css" rel="stylesheet">
-        <link href="js/toDoList.js" rel="stylesheet">
+        <!--Javascript-->
+        <script src="toDoList.js"></script>
         <title>Simpli-Life</title>
     </head>
     <body>
-        <div class="container" id="main">
+        <button id="light-dark" onclick="toggleTheme()"><i class="fa fa-moon"></i></button>
+        <div class="container" id="cont">
             <div class="header">
+                <div id="header-title">
+                    <h1>Welcome to Simpli-Life<button type="button" id="refresh" onclick="refresh()"><i class="fa fa-retweet"></i></button></h1>
+                </div>
                 <img src="img/youcandoit.jpg">
-                 <button type="button" id="refresh" onclick="refresh()"><i class="fas fa-retweet"></i></button>
-                    <div id="header-title">
-                        <h1>Welcome to Simpli-Life</h1>
-                        <div id="date"></div>
-                        <div id="time"></div>
-                    </div>
+                <div id="clock" class="clock">loading ...</div>
             </div>
-            <div class="content">
+            <div id="box">
                 <h1>Your To-Do List</h1>
             </div>
             <div class="add-to-do">
-                <input type="text" id="item" placeholder="Add a task">
-                <button type="button" onclick="addTask()" id="addToList"><i class="fa fa-plus"></i></button>
+                <input type="text" id="inp" placeholder="Add a task">
+                <button type="button" onclick="addTask()" id="addList"><i class="fa fa-plus"></i></button>
             </div>
         </div>
-        <!--Javascript-->
-        <script src="toDoList.js"></script>
         <!--Spotify Playlist Chill beats-->
         <iframe src="https://open.spotify.com/embed/playlist/4ANPW38qMEYQ3Z1mVLrtmm" width="380" height="80" postiion="center" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </body>
