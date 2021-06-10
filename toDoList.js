@@ -48,15 +48,16 @@ if (localStorage.getItem("colorTheme") === "dark") {
   toggleTheme();
 };
 
-function add(){
-  var box=document.getElementById('box');
-  var inp=document.getElementById('inp');
+//To Do List Functions
+function addTask(){
+  var taskArea=document.getElementById('taskArea');
+  var input=document.getElementById('input');
 
-  if(inp.value!='')
+  if(input.value!='')
   {
-      var boxTitle=document.getElementById('box-title');
-      if(boxTitle){
-          boxTitle.remove();
+      var title=document.getElementById('title');
+      if(title){
+          title.remove();
       }
       var divs=document.createElement('div');
       divs.setAttribute('id','item');
@@ -72,7 +73,7 @@ function add(){
       var todo=document.createElement('p');
       todo.setAttribute('id','todoList');
 
-      var content=document.createTextNode(inp.value);
+      var content=document.createTextNode(input.value);
       todo.appendChild(content);
       parent.appendChild(todo);
       divs.appendChild(parent);
@@ -85,24 +86,27 @@ function add(){
       btn.setAttribute('onclick','remove(this)');
       divs.appendChild(btn);
 
-      //adding to box
-      box.appendChild(divs);
-      inp.value='';
+      //adding to taskArea
+      taskArea.appendChild(divs);
+      input.value='';
   }
   else{
-      alert("Please enter your ToDo");
+      alert("Please enter a task you want to complete!");
   }
 
 }
+
 //remove function
 function remove(event){
   event.parentNode.parentNode.removeChild(event.parentNode);
 
 }
-//refresh function
+
+//refresh function//clears the whole list
 function refresh(){
   location.reload();
 }
+
 //done
 function done(e){
   if(e.classList!='line')
