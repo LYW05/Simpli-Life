@@ -29,6 +29,11 @@
     margin:0 auto;
 }
 
+div {
+  height: calc(100vh - 50px);
+}
+
+/*---------- header ----------*/
 #header{
     height: 20vh;
     border-top-left-radius: 10px;
