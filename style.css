@@ -23,27 +23,27 @@
   }
 
 /* ------------ container ------------ */
-.container{
+.container {
     padding:20px;
     width:380px;
     margin:0 auto;
 }
 
 /*---------- header ----------*/
-#header{
-    height: 20vh;
+#header {
+    height: 22vh;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     display: block;
 }
 
-img{
+img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-#refresh{
+#refresh {
     margin-left: 320px;
     margin-top: 15px;
     font-size: 25px;
@@ -52,7 +52,7 @@ img{
     border-radius: 5px;
 }
 
-#header-title{
+#header-title {
     text-align: center;
     padding: 20x;
     font-size: 15px;
@@ -60,7 +60,7 @@ img{
     display: block;
 }
 
-#taskArea{
+#taskArea {
     width: 380px;
     height: 50vh;
     overflow-x: hidden;
@@ -69,12 +69,12 @@ img{
     padding: 0;
 }
 
-#title{
+#title {
     padding: 150px 30px;
     font-size: 20px;
 }
 
-#item{
+#item {
     width: 370px;
     display: flex;
     cursor: pointer;
@@ -86,7 +86,7 @@ img{
     font-weight: 500;
 }
 
-#done{
+#done {
     background: transparent;
     border: none;
     outline: none;
@@ -97,24 +97,24 @@ img{
     width: 30px;
 }
 
-#parent{
+#parent {
     position: relative;
     padding: 0 10px;
     width: 100%;
     display: block;
 }
 
-#item:hover{
+#item:hover {
     background: rgb(197,196,196);
     color: rgba(54,51,51,0.95);
     transition:  all 0.3s ease-in-out;
 }
 
-.check{
+.check {
     color: green;
 }
 
-#del{
+#del {
     background: transparent;
     border: none;
     outline: none;
@@ -131,7 +131,7 @@ img{
     transition:  all 0.3s ease-in-out;
 }
 
-#add{
+#add {
     position: relative;
     background: rgb(92,80,62);
     border-bottom-right-radius: 10px;
@@ -139,7 +139,7 @@ img{
     padding: 8px 2px;
 }
 
-#input{
+#input {
     width: 310px;
     height: 40px;
     outline: none;
@@ -149,7 +149,7 @@ img{
     color: rgb(3,18,19);
 }
 
-#addList{
+#addList {
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -165,7 +165,7 @@ img{
     transition:  all 0.3s ease-in-out;
 }
 
-.line{
+.line {
     text-decoration: line-through;
 }
 
