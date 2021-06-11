@@ -31,7 +31,7 @@
 
 /*---------- header ----------*/
 #header {
-    height: 22vh;
+    height: 20vh;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     display: block;
@@ -50,6 +50,12 @@ img {
     outline: none;
     border: none;
     border-radius: 5px;
+}
+
+#refresh:hover {
+    background: rgb(197,196,196);
+    color: rgba(54,51,51,0.95);
+    transition:  all 0.3s ease-in-out;
 }
 
 #header-title {
