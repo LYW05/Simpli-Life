@@ -31,7 +31,7 @@
 
 /*---------- header ----------*/
 #header {
-    height: 20vh;
+    height: 22vh;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     display: block;
@@ -44,7 +44,7 @@ img {
 }
 
 #refresh {
-    margin-left: 320px;
+    margin-left: 350px;
     margin-top: 0px;
     font-size: 25px;
     outline: none;
